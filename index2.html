@@ -9,7 +9,8 @@
 	canvas {margin: 0 auto;position: relative;left:0;top:0;}
 	</style>
 </head>
-<body>
+<body>
+
 <script type="text/javascript">
 
 var GameState = function(game){
@@ -123,7 +124,7 @@ var GameState = function(game){
 				_going = true;
 				line.visible = false;
 				// Create Balls
-				var vPoint = this._velocityFromRotation(line.rotation,1400);
+				var vPoint = this._velocityFromRotation(line.rotation,1350);
 				for(var i=0; i<_ballNum; i++){
 					game.time.events.add(200*i,function(id,p){
 						if(id<balls.children.length){
